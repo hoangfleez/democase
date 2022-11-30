@@ -9,9 +9,12 @@ class Ball {
     }
 
     draw() {
+        this.ctx.clearRect(this.x - this.radius - 2, this.y - this.radius - 1, this.radius * 2 + 5, this.radius * 2 + 2);
         this.ctx.beginPath();
         this.ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
         this.ctx.fillStyle = this.color
         this.ctx.fill();
     }
+
+
 }
