@@ -10,7 +10,7 @@ class Bar {
         this.ctx = this.canvas.getContext('2d');
     }
     moveClear() {
-        this.ctx.clearRect(0, 0, 500, 500);
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         // this.x -= 10;
     }
 
@@ -20,4 +20,5 @@ class Bar {
         this.ctx.rect(this.x, this.y, this.width, this.height,this.speed);
         this.ctx.fill();
     }
+
 }
