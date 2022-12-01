@@ -9,7 +9,7 @@ class Bar {
         this.canvas = document.getElementById('gamez');
         this.ctx = this.canvas.getContext('2d');
     }
-    move() {
+    moveClear() {
         this.ctx.clearRect(0, 0, 500, 500);
         // this.x -= 10;
     }
